@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#conteiner {
+    display: flex;
+}
+
+#editor  {
+    border: none;
+    outline: none;
+    overflow: auto;
+    resize: none;
+    width: 100%;
+    height: 100vh;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+#left-panel {
+    width: 150px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    font-family: 'Oswald', sans-serif;
+    overflow: auto;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu p,
+#fileName {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.menu p.active,
+.menu p:hover,
+#fileName:hover {
+    background-color: #555;
+    cursor: pointer;
+    user-select: none;
+}
+
+#edit {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.files p {
+    font-family: 'Young Serif', serif;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.2s;
+    border-radius: 5px;
+}
+
+.files p.active,
+.files p:hover {
+    background-color: #555;
+    cursor: pointer;
+    user-select: none;
+}
+
+#ot {
+    border-radius: 4px;
+}
+
+#reload {
+    user-select: none;
+    display: inline-block;
+    transition: background-color 0.2s;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 85%;
+}
+
+#reload:hover {
+    background-color: #555;
+    cursor: pointer;
+    user-select: none
+}

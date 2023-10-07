@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Blocknote</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+  </head>
+  <body>
+    <div id="conteiner">
+      <div id="left-panel">
+
+        <p id="fileName">default.txt</p>
+
+        <hr id="ot2">
+
+        <ul class="menu">
+          <li id="open"><p>Открыть</p></li>
+          <li id="safe"><p>Сохранить</p></li> 
+          <hr id="ot">
+        </ul>
+
+        <div>
+          <span id="reload" class="material-symbols-outlined">restart_alt</span>
+        </div>
+
+        <div id="filesDiv"></div>
+
+      </div>
+
+      <div id="edit">
+        <textarea id="editor" type="text" spellcheck="false"></textarea>
+      </div>
+
+      <script src="render.js"></script>
+    </div>
+  </body>
+</html>
